@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign up</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- 	<script type="text/javascript">
+	$(document).ready(function(){
+	    $('body').append('<br/>Этот текст добавлен с помощью jQuery');
+	});
+	</script> -->
+	<!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}"> 
+</head>
+<body>
+
+<!-- 	<div class="container">
+		<a href="..">MAIN PAGE</a>
+		<h1>Sign up</h1>
+		{% csrf_token %}
+		<center><img src="{% static img %}" id="logo" style="max-height: 120px"><center>
+
+		<form action="{% url 'signup_user' %}" method="post">
+			{% csrf_token %}
+			<div class="col-md-4">
+				<input type="text" name="user_name" class="form-control" placeholder="Username" id="user_name_input">
+				<input type="text" name="email" class="form-control" placeholder="Email" id="email_input">
+			</div><br>
+			<div class="btn-group btn-group-lg">
+				<button type="submit" class="btb btn-sm btn-success" id='signup'>Signup</button>
+			</div>
+		</form>
+		<button class="newbutton" id="check_name_btn">Check</button>
+		<button class="btb btn-sm btn-danger" id="changepid">pid</button>
+		<img src="{% static img %}" id="logodown" style="display:none;">
+		<p id='pid'>первый параграф</p>
+
+	</div> -->
+<!-- 	<div class="test_block">
+		<div class="test_block1" id="test_block1" style="display:none;">
+			<div class="spinner-border text-primary center-spinner" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- <button class="newbutton">Кнопка</button> -->
+
+
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src={% static "hsdic/login.js" %}></script>
+</body>
+</html>

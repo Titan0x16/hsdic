@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Create your deck image</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}"> <!-- Ковычки ебаные -->
+</head>
+<body>
+	<div class="text-center">
+		<img src={% static "hsdic/hslogo.png" %} class="mainlink">
+		<h2>Paste your code below:</h2><br><br>
+
+		<form class="test-form" method="POST">
+	        {% csrf_token %}
+	        {{ deckform }}
+			<button type="submit" class="btn btn-warning m-1">Отправить</button>
+		<!--     <input type="submit" value="Send" > -->
+		</form>
+
+<!-- 		<form method="post" class="contact_form">    
+		    <input type="text" placeholder="Deck code here"><br>
+		</form> -->
+	<br><br><br>
+		{{code}} <br>
+		<div class="spinner-border text-primary m-5" role="status">
+			<span class="sr-only">Loading...</span>
+		</div><br>
+		<!-- <img src={% static img %} height="280" style="max-width: 520px" class="rounded" alt="..."> -->
+		<div class="textedimage">
+			<!-- <a href={% static img %} target="_blank"> -->
+			    <img src={% static img %} height="280" style="max-width: 520px" class="rounded" alt="...">
+			<!-- </a> -->
+			<a href={% static img %} src={% static img %} download>
+				<div class="textaboveimage">
+					<h4>Download</h4>
+				</div>
+			</a>
+		</div>
+			
+
+
+	</div>
+	<!-- <img src={% static img %} height="280" style="max-width: 520px"> -->
+
+	<div class="test">
+		<a href="" class="btn btn-outline-info">Main</a>
+		<div class="btn-group" role="group" aria-label="Basic example">
+			<button type="button" class="btn btn-secondary">Left</button>
+			<button type="button" class="btn btn-secondary">Middle</button>
+			<button type="button" class="btn btn-secondary">Right</button>
+		</div>
+		<button type="button" class="btn btn-secondary">Кнопуля</button>
+	</div>
+
+
+<!-- 	<div class="textedimage">
+		<img src={% static img %} />
+		<div class="textaboveimage">
+			<h4>Download</h4>
+		</div>
+	</div> -->
+
+</body>
+</html>
